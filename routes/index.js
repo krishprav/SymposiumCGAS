@@ -15,6 +15,11 @@ router.get('/logout', function(req, res) {
     // Handle logout
 });
 
+// Route to handle user logout
+router.get('/saveChanges', function(req, res) {
+    // Handle saveChanges
+});
+
 // Route for user authentication
 router.get('/admin', function(req, res, next) {
     res.render('admin', { title: 'Admin' });
