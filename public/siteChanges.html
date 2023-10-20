@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Site Changes</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <style>
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: #4a5568;
+    }
+
+    h2 {
+      font-family: 'Georgia', serif;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: left;
+      color: #4a5568;
+    }
+
+    .publication-item {
+      border: 2px solid #e2e8f0;
+      padding: 10px;
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    /* Style the delete button (cross icon) */
+    .publication-item button {
+      transition: all 0.2s;
+    }
+
+    .delete-button {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+    }
+
+    /* Style the Add New Publication button */
+    .add-publication-button {
+      position: fixed;
+      /* Fixed position */
+      bottom: 20px;
+      /* Adjust the distance from the bottom */
+      right: 20px;
+      /* Adjust the distance from the right */
+      background-color: #4a90e2;
+      color: white;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #save-changes-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: auto; /* Keep the button width as it is */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-200 h-screen p-4 sm:p-8">
+  <div class="bg-white p-4 sm:p-8 rounded-lg shadow-md w-full max-w-2xl mx-auto">
+    <h1 class="text-2xl mb-4">Configure Site</h1>
+    <div id="message" class="text-green-500 mb-4"></div>
+    <form id="site-changes-form" action="/saveChanges" method="post">
+      <h2 class="text-xl mb-4">Twitter Posts</h2>
+      <div class="mb-4">
+        <label for="tweet1" class="block text-sm font-medium text-gray-600">Tweet 1</label>
+        <input type="text" id="tweet1" name="tweet1" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+      </div>
+      <div class="mb-4">
+        <label for="tweet2" class="block text-sm font-medium text-gray-600">Tweet 2</label>
+        <input type="text" id="tweet2" name="tweet2" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+      </div>
+      <div class="mb-4">
+        <label for="tweet3" class="block text-sm font-medium text-gray-600">Tweet 3</label>
+        <input type="text" id="tweet3" name="tweet3" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+      </div>
+      <h2 class="text-xl mb-4">LinkedIn Posts</h2>
+      <div class="mb-4">
+        <label for="linkedin1" class="block text-sm font-medium text-gray-600">Post 1</label>
+        <input type="text" id="linkedin1" name="linkedin1" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+      </div>
+      <div class="mb-4">
+        <label for="linkedin2" class="block text-sm font-medium text-gray-600">Post 2</label>
+        <input type="text" id="linkedin2" name="linkedin2" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+      </div>
+      <div class="mb-4">
+        <label for="linkedin3" class="block text-sm font-medium text-gray-600">Post 3</label>
+        <input type="text" id="linkedin3" name="linkedin3" class="mt-1 p-2 w-full rounded-md border border-gray-300">
+      </div>
+      <h2 class="text-xl mb-4 flex items-center">
+        Publications (Drag cards to reorder)
+        <button id="add-publication-button"
+          class="ml-2 bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-full flex items-center">
+          <span class="pr-1">New</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+          </svg>
+        </button>
+      </h2>
+      <div id="publications-container" class="space-y-4">
+        <!-- Individual Draggable Publication Item -->
+      </div>
+
+      <button type="submit" id="save-changes-button"
+        class="bg-blue-500 hover-bg-blue-600 text-white mt-4 p-2 rounded-md w-full">Save Changes</button>
+    </form>
+  </div>
+  <script src="assets/js/siteChanges.js"></script>
+</body>
+
+</html>
