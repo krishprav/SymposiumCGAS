@@ -5,12 +5,27 @@ body, html {
   line-height: 1.8;
 }
 
+/* Increase top and bottom margin of the navbar */
+.w3-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0.65;
+  transition: opacity 0.5s ease; /* For smooth transition */
+}
+
+/* Align navigation buttons vertically centered in the navbar */
+.w3-bar-item {
+  display: flex;
+  align-items: center;
+}
+
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
   background-size: cover;
   background-image: url("/assets/cgas_bg.png");
   min-height: 100%;
+  scale: 0.99;
 }
 
 .w3-bar .w3-button {
