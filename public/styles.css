@@ -72,18 +72,37 @@ body, html {
 
 .anim_container .anim_box .anim_title h1 {
   font-family: 'Poppins';
-  color: #fff;
+  color: #ffffff;
   font-size: 10vh;
   animation: mainFadeIn 2s forwards;
   animation-delay: 1.6s;
   opacity: 0;
   white-space: nowrap;
-
   display: flex;
   align-items: baseline;
   position: relative;
 }
 
+/* New Realistic Marker Highlight for Hero Text */
+.anim_container .anim_box .anim_title h1 span.realistic-marker-highlight {
+  position: relative;
+}
+
+.anim_container .anim_box .anim_title h1 span.realistic-marker-highlight:before {
+  content: "";
+  background-color: #990000;
+  width: 105%;
+  height: 1em;
+  position: absolute;
+  z-index: -1;
+  filter: url(#marker-shape);
+  left: -0.25em;
+  top: 0.3em;
+  padding: 0 0.25em;
+  opacity: 1;
+}
+
+/*
 .anim_container .anim_box .anim_title h1 span {
   width: 0px;
   height: 0px;
@@ -97,6 +116,7 @@ body, html {
   bottom: 13px;
   right: -12px;
 }
+*/
 
 .anim_container .anim_box .anim_role {
   width: 100%;
@@ -104,7 +124,7 @@ body, html {
   display: flex;
   align-items: center;
   height: 30px;
-  margin-top: 2vh;
+  margin-top: 3vh;
 }
 
 .anim_container .anim_box .anim_role .anim_block {
@@ -136,12 +156,12 @@ body, html {
     left: 0;
   }
   50% {
-    width: 100%;
+    width: 200%;
     left: 0;
   }
   100% {
     width: 0;
-    left: 100%;
+    left: 200%;
   }
 }
 
@@ -151,12 +171,12 @@ body, html {
     left: 0;
   }
   50% {
-    width: 100%;
+    width: 65vh;
     left: 0;
   }
   100% {
     width: 0;
-    left: 100%;
+    left: 65vh;
   }
 }
 
