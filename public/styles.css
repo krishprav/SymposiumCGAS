@@ -18,17 +18,34 @@ body, html {
   align-items: center;
 }
 
-/* Full height image header */
+/* Hero section */
 .bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/assets/cgas_bg.png");
-  min-height: 100%;
-  scale: 0.99;
+  position: relative;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+
+/* New styles for the hero section */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+  background-image: url('/assets/Dall\ E\ chef.png');
+  scale: 1;
+  background-size: contain; /* Scale the image to be as large as possible */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image */
 }
 
 /* Animation time for Hero Text */
@@ -63,7 +80,7 @@ body, html {
 .anim_container .anim_box .anim_title .anim_block {
   width: 0%;
   height: inherit;
-  background: #ffb510;
+  background: #DC143C;
   position: absolute;
   animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
   display: flex;
@@ -71,8 +88,8 @@ body, html {
 
 .anim_container .anim_box .anim_title h1 {
   font-family: 'Poppins';
-  color: #ffffff;
-  font-size: 10vh;
+  color: #DC143C;
+  font-size: 8vh;
   animation: mainFadeIn 2s forwards;
   animation-delay: 1.6s;
   opacity: 0;
@@ -82,31 +99,11 @@ body, html {
   position: relative;
 }
 
-/* New Realistic Marker Highlight for Hero Text */
-.anim_container .anim_box .anim_title h1 span.realistic-marker-highlight {
-  position: relative;
-}
-
-.anim_container .anim_box .anim_title h1 span.realistic-marker-highlight:before {
-  content: "";
-  background-color: #990000;
-  width: 105%;
-  height: 1em;
-  position: absolute;
-  z-index: -1;
-  filter: url(#marker-shape);
-  left: -0.25em;
-  top: 0.3em;
-  padding: 0 0.25em;
-  opacity: 1;
-}
-
-/*
 .anim_container .anim_box .anim_title h1 span {
   width: 0px;
   height: 0px;
   border-radius: 50%;
-  background: #ffb510;
+  background: #e8b923;
   animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
   animation-delay: 2s;
   margin-left: 5px;
@@ -115,7 +112,6 @@ body, html {
   bottom: 13px;
   right: -12px;
 }
-*/
 
 .anim_container .anim_box .anim_role {
   width: 100%;
@@ -129,7 +125,7 @@ body, html {
 .anim_container .anim_box .anim_role .anim_block {
   width: 0%;
   height: inherit;
-  background: #e91e63;
+  background: #497C3F;
   position: absolute;
   animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
   animation-delay: 2s;
@@ -141,8 +137,8 @@ body, html {
   animation-delay: 3.2s;
   opacity: 0;
   font-weight: 400;
-  font-family: 'Lato';
-  color: #ffffff;
+  font-family: 'Georgia';
+  color: #497C3F;
   font-size: 5vh;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -232,3 +228,27 @@ body, html {
     opacity: 0.5;
   }
 }
+
+button {
+  padding: 16px 32px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #DC143C;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all .3s ease;
+  box-shadow: #a90f2e 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+ }
+ 
+ button:hover {
+  box-shadow: #a90f2e 0px 7px 0px 0px;
+ }
+ 
+ button:active {
+  background-color: #DC143C;
+  /*50, 168, 80*/
+  box-shadow: #a90f2e 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+ }

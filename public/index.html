@@ -6,20 +6,11 @@
 <title>GastroSym2023</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- For the highlighter used in hero title  -->
-<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
-  <defs>
-    <filter id="marker-shape">
-      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
-      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
-    </filter>
-  </defs>
-</svg>
+<link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -56,35 +47,46 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="height:100vh;">
+  <div class="hero-container">
+    <div class="hero-left" style="padding:48px">
+      <!--  Hero-Text animation time  -->
+      <div class="anim_container">
+        <div class="anim_box">
+    
+          <div class="anim_title">
+            <span class="anim_block"></span>
+            <h1>Symposium on</h1>
+          </div>
+          <br>
 
-    <!--  Hero-Text animation time  -->
-    <div class="anim_container">
-      <div class="anim_box">
-  
-        <div class="anim_title">
-          <span class="anim_block"></span>
-          <h1><span class="realistic-marker-highlight">Computational Gastronomy</span><span></span></h1>
+          <div class="anim_title">
+            <span class="anim_block"></span>
+            <h1>Computational Gastronomy<span></span></h1>
+          </div>
+          <br>
+
+          <div class="anim_role">
+            <div class="anim_block"></div>
+            <p>GastroSym2023</p>
+          </div>
+          <br><br>
+
+          <button id="learnMore">Learn More</button>
         </div>
-  
-        <div class="anim_role">
-          <div class="anim_block"></div>
-          <p>GastroSym2023</p>
-        </div>
-  
       </div>
     </div>
 
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">GastroSym2023</span><br>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
-  </div> 
+    <div class="hero-right">
+    </div>
+
+  </div>
 </header>
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
+  <h3 class="w3-center">Unlocking the Future of Food with Computational Gastronomy</h3>
+  <p class="w3-center w3-large">Where Culinary Art Meets Data Science</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
