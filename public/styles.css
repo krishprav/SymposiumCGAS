@@ -229,26 +229,55 @@ body, html {
   }
 }
 
-button {
-  padding: 16px 32px;
-  border-radius: 10px;
-  border: 0;
-  background-color: #DC143C;
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: all .3s ease;
-  box-shadow: #a90f2e 0px 10px 0px 0px;
-  color: hsl(0, 0%, 100%);
+ button {
+  font-size: 2vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #DC143C;
+  border-radius: 2px;
+  position: relative;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #DC143C;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  z-index: 1;
+  max-width: max-content;
  }
  
- button:hover {
-  box-shadow: #a90f2e 0px 7px 0px 0px;
+ button:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #DC143C;
+  z-index: -1;
+ }
+ 
+ button:hover, button:focus {
+  color: white;
+ }
+ 
+ button:hover:before, button:focus:before {
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
  }
  
  button:active {
-  background-color: #DC143C;
-  /*50, 168, 80*/
-  box-shadow: #a90f2e 0px 0px 0px 0px;
-  transform: translateY(5px);
-  transition: 200ms;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
  }
