@@ -5,6 +5,20 @@ body, html {
   line-height: 1.8;
 }
 
+#sectionHeader {
+  color: #8F2B3F;
+  font-size: 5vh;
+  font-weight: 600;
+}
+
+#sectionhr {
+  position: relative;
+  width: 25%;
+  height: 2px;
+  margin: auto;
+  background: #e8b923;
+}
+
 /* Increase top and bottom margin of the navbar */
 .w3-bar {
   padding-top: 10px;
@@ -16,6 +30,7 @@ body, html {
 .w3-bar-item {
   display: flex;
   align-items: center;
+  color: #8F2B3F;
 }
 
 /* Hero section */
@@ -87,9 +102,10 @@ body, html {
 }
 
 .anim_container .anim_box .anim_title h1 {
-  font-family: 'Poppins';
+  font: 'lato', sans-serif;
   color: #DC143C;
   font-size: 8vh;
+  font-weight: 600;
   animation: mainFadeIn 2s forwards;
   animation-delay: 1.6s;
   opacity: 0;
@@ -125,7 +141,7 @@ body, html {
 .anim_container .anim_box .anim_role .anim_block {
   width: 0%;
   height: inherit;
-  background: #497C3F;
+  background: #ffc400;
   position: absolute;
   animation: secBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
   animation-delay: 2s;
@@ -138,10 +154,10 @@ body, html {
   opacity: 0;
   font-weight: 400;
   font-family: 'Georgia';
-  color: #497C3F;
+  color: #ffc400;
   font-size: 5vh;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 /* Keyframes */
@@ -281,3 +297,6 @@ body, html {
       -ms-transform: scale(0.9);
           transform: scale(0.9);
  }
+
+/* About section */
+
