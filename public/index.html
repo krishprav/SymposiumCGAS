@@ -1,127 +1,243 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
 
-<title>GastroSym2023</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GastroSym2023</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
 
 </head>
 
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="/assets/Frame 4.svg" alt="Cosy labs logo" height="30px" id="logo"></a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <!-- <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="/images/Frame 4.svg" alt="Cosy labs logo"
+                    height="30px" id="logo"></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <!-- <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a> -->
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">SPEAKERS</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="height:100vh;">
-  <div class="hero-container">
-    <div class="hero-left" style="padding:48px">
-      <!--  Hero-Text animation time  -->
-      <div class="anim_container">
-        <div class="anim_box">
-    
-          <div class="anim_title">
-            <span class="anim_block"></span>
-            <h1>Symposium on</h1>
-          </div>
-          <br>
-
-          <div class="anim_title">
-            <span class="anim_block"></span>
-            <h1>Computational Gastronomy<span></span></h1>
-          </div>
-          <br>
-
-          <div class="anim_role">
-            <div class="anim_block"></div>
-            <p>GastroSym2023</p>
-          </div>
-          <br><br>
-
-          <button id="learnMore">Learn More</button>
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-      </div>
     </div>
 
-    <div class="hero-right">
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">SPEAKERS</a>
+        <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+        <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home" style="height:100vh;">
+        <div class="hero-container">
+            <div class="hero-left" style="padding:48px">
+                <!--  Hero-Text animation time  -->
+                <div class="anim_container">
+                    <div class="anim_box">
+
+                        <div class="anim_title">
+                            <span class="anim_block"></span>
+                            <h1>Symposium on</h1>
+                        </div>
+                        <br>
+
+                        <div class="anim_title">
+                            <span class="anim_block"></span>
+                            <h1>Computational Gastronomy<span></span></h1>
+                        </div>
+                        <br>
+
+                        <div class="anim_role">
+                            <div class="anim_block"></div>
+                            <p>GastroSym2023</p>
+                        </div>
+                        <br><br>
+
+                        <button id="learnMore">Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+            </div>
+
+        </div>
+    </header>
+
+    <div class="timer-container">
+        <div class="balloon white">
+            <div class="star-red"></div>
+            <div class="face">
+                <div class="eye"></div>
+                <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+        </div>
+
+        <div class="balloon red">
+            <div class="star"></div>
+            <div class="face">
+                <div class="eye"></div>
+                <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+        </div>
+
+        <div class="balloon blue">
+            <div class="star"></div>
+            <div class="face">
+                <div class="eye"></div>
+                <div class="mouth happy"></div>
+            </div>
+            <div class="triangle"></div>
+            <div class="string"></div>
+        </div>
+
+        <div id="timer">
+            <div class="days">
+                <div class="numbers">00</div>days
+            </div>
+            <div class="hours">
+                <div class="numbers">00</div>hours
+            </div>
+            <div class="minutes">
+                <div class="numbers">00</div>minutes
+            </div>
+            <div class="seconds">
+                <div class="numbers">00</div>seconds
+            </div>
+        </div>
+        <timer-label>December 10, 2023 Countdown</timer-label>
     </div>
 
-  </div>
-</header>
 
-<!-- 
+    <!-- 
   About Section 
 -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center" id="sectionHeader">Unlocking the Future of Food with Computational Gastronomy</h3>
-  <hr id="sectionhr">
-  <br>
-  <p style="margin-left:10%; margin-right:10%; text-align: center;">
-    Hosted by the Complex Systems Laboratory at IIIT-Delhi, this pioneering event aims to bridge the worlds of culinary arts and data science. 
-    Computational Gastronomy is an emerging interdisciplinary science that leverages statistical analysis, machine learning, and artificial intelligence to revolutionize the way we approach food and nutrition. 
-    <br>Join us to discover how the culinary landscape is being reshaped by technology!</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-solid fa-globe w3-margin-bottom w3-jumbo w3-center" style="color: #ffc400;"></i>
-      <p class="w3-large" style="color: #ffc400;">Interdisciplinary Approach</p>
-      <p>This symposium brings together chefs, data scientists, researchers, and industry professionals to explore the intersection of culinary arts and computational methods.</p>
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center" id="sectionHeader">Unlocking the Future of Food with Computational Gastronomy</h3>
+        <hr id="sectionhr">
+        <br>
+        <p style="margin-left:10%; margin-right:10%; text-align: center;">
+            Hosted by the Complex Systems Laboratory at IIIT-Delhi, this pioneering event aims to bridge the worlds of
+            culinary arts and data science.
+            Computational Gastronomy is an emerging interdisciplinary science that leverages statistical analysis,
+            machine learning, and artificial intelligence to revolutionize the way we approach food and nutrition.
+            <br>Join us to discover how the culinary landscape is being reshaped by technology!
+        </p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-solid fa-globe w3-margin-bottom w3-jumbo w3-center" style="color: #ffc400;"></i>
+                <p class="w3-large" style="color: #ffc400;">Interdisciplinary Approach</p>
+                <p>This symposium brings together chefs, data scientists, researchers, and industry professionals to
+                    explore the intersection of culinary arts and computational methods.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-bar-chart w3-margin-bottom w3-jumbo" style="color: #ffc400;"></i>
+                <p class="w3-large" style="color: #ffc400;">Data-Driven Insights</p>
+                <p>Learn how big data, machine learning, and AI are providing new perspectives on food pairing, culinary
+                    fingerprints, disease-specific recommendations, and more.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-envira w3-margin-bottom w3-jumbo" style="color: #ffc400;"></i>
+                <p class="w3-large" style="color: #ffc400;">Sustainability & Health</p>
+                <p>Discover how Computational Gastronomy can lead to more sustainable food practices and better health
+                    outcomes through informed, data-driven decisions.</p>
+            </div>
+            <div class="w3-quarter">
+                <svg xmlns="http://www.w3.org/2000/svg" height="4.5em"
+                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <style>
+                        svg {
+                            fill: #ffc400
+                        }
+                    </style>
+                    <path
+                        d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z" />
+                </svg>
+                <p class="w3-large" style="color: #ffc400;">Culinary Innovation</p>
+                <p>Unlock the potential of creative recipe generation, unique flavor combinations, and novel
+                    food-beverage pairings through the power of data analytics.</p>
+            </div>
+        </div>
     </div>
-    <div class="w3-quarter">
-      <i class="fa fa-bar-chart w3-margin-bottom w3-jumbo" style="color: #ffc400;"></i>
-      <p class="w3-large" style="color: #ffc400;">Data-Driven Insights</p>
-      <p>Learn how big data, machine learning, and AI are providing new perspectives on food pairing, culinary fingerprints, disease-specific recommendations, and more.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-envira w3-margin-bottom w3-jumbo" style="color: #ffc400;"></i>
-      <p class="w3-large" style="color: #ffc400;">Sustainability & Health</p>
-      <p>Discover how Computational Gastronomy can lead to more sustainable food practices and better health outcomes through informed, data-driven decisions.</p>
-    </div>
-    <div class="w3-quarter">
-      <svg xmlns="http://www.w3.org/2000/svg" height="4.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffc400}</style><path d="M416 0C400 0 288 32 288 176V288c0 35.3 28.7 64 64 64h32V480c0 17.7 14.3 32 32 32s32-14.3 32-32V352 240 32c0-17.7-14.3-32-32-32zM64 16C64 7.8 57.9 1 49.7 .1S34.2 4.6 32.4 12.5L2.1 148.8C.7 155.1 0 161.5 0 167.9c0 45.9 35.1 83.6 80 87.7V480c0 17.7 14.3 32 32 32s32-14.3 32-32V255.6c44.9-4.1 80-41.8 80-87.7c0-6.4-.7-12.8-2.1-19.1L191.6 12.5c-1.8-8-9.3-13.3-17.4-12.4S160 7.8 160 16V150.2c0 5.4-4.4 9.8-9.8 9.8c-5.1 0-9.3-3.9-9.8-9L127.9 14.6C127.2 6.3 120.3 0 112 0s-15.2 6.3-15.9 14.6L83.7 151c-.5 5.1-4.7 9-9.8 9c-5.4 0-9.8-4.4-9.8-9.8V16zm48.3 152l-.3 0-.3 0 .3-.7 .3 .7z"/></svg>      <p class="w3-large" style="color: #ffc400;">Culinary Innovation</p>
-      <p>Unlock the potential of creative recipe generation, unique flavor combinations, and novel food-beverage pairings through the power of data analytics.</p>
-    </div>
-  </div>
-</div>
 
 
-<!-- 
+    <section class="timeline">
+        <div class="container">
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content js--fadeInLeft">
+              <timeline-card-title>Title</timeline-card-title>
+              <div class="date">1 MAY 2016</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+              <a class="bnt-more" href="javascript:void(0)">More</a>
+            </div>
+          </div> 
+      
+          <div class="timeline-item">
+      
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content timeline-card js--fadeInRight">
+              <div class="timeline-img-header">
+                <timeline-card-title>Card Title</timeline-card-title>
+              </div>
+              <div class="date">25 MAY 2016</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+              <a class="bnt-more" href="javascript:void(0)">More</a>
+            </div>
+      
+          </div>   
+      
+          <div class="timeline-item">
+      
+            <div class="timeline-img"></div>
+      
+            <div class="timeline-content js--fadeInLeft">
+              <div class="date">3 JUN 2016</div>
+              <timeline-card-title>Quote</timeline-card-title>
+              <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+            </div>
+          </div>   
+     
+        </div>
+      </section>
+
+
+
+
+
+    <!-- 
   Useless Section, let's see if there's any use 
 -->
-<!-- 
+    <!-- 
 <div class="w3-container w3-light-grey" style="padding:128px 16px">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -136,10 +252,10 @@
 </div>
 -->
 
-<!-- 
+    <!-- 
   Speakers Section 
 -->
-<!-- Populate when speakers are added 
+    <!-- Populate when speakers are added 
 <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center" id="sectionHeader">Our Speakers</h3>
   < !-- <p class="w3-center w3-large">Poopoo Peepoo</p> -- >
@@ -194,10 +310,10 @@
 </div>
 -->
 
-<!-- 
+    <!-- 
   Promo Section "Statistics" 
 -->
-<!-- Populate w statistics if provided -- >
+    <!-- Populate w statistics if provided -- >
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
     <span class="w3-xxlarge">14+</span>
@@ -218,10 +334,10 @@
 </div>
 -->
 
-<!-- 
+    <!-- 
   Videos and Photos Section?
 -->
-<!-- 
+    <!-- 
 <div class="w3-container" style="padding:128px 16px" id="work">
   <h3 class="w3-center">OUR WORK</h3>
   <p class="w3-center w3-large">What we've done for people</p>
@@ -258,8 +374,8 @@
 </div>
 -->
 
-<!-- Modal for full size images on click-->
-<!-- Idk what this is 
+    <!-- Modal for full size images on click-->
+    <!-- Idk what this is 
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -269,8 +385,8 @@
 </div>
 -->
 
-<!-- Skills Section -->
-<!-- Seems unecessary for now
+    <!-- Skills Section -->
+    <!-- Seems unecessary for now
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
     <div class="w3-col m6">
@@ -298,8 +414,8 @@
 </div>
 -->
 
-<!-- Pricing Section -->
-<!-- Could lead to registration and payment
+    <!-- Pricing Section -->
+    <!-- Could lead to registration and payment
 <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
   <h3>PRICING</h3>
   <p class="w3-large">Choose a pricing plan that fits your needs.</p>
@@ -356,45 +472,46 @@
 </div>
 -->
 
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    <!-- Image of location/map -->
-    <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-  </div>
-</div>
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+            <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+        </div>
+    </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</footer>
- 
-<script src="/public/scripts.js"></script>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </footer>
+
+    <script src="/javascripts/scripts.js"></script>
 
 </body>
+
 </html>
